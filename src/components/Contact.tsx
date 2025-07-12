@@ -46,13 +46,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 8431472008',
-      link: 'tel:+918431472008'
+      value: '+91 8431470008',
+      link: 'tel:+918431470008'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Mumbai, India',
+      value: 'India',
       link: '#'
     }
   ];

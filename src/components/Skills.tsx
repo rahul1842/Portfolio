@@ -6,43 +6,31 @@ const Skills = () => {
     {
       title: 'Languages',
       icon: Code,
-      skills: [
-        { name: 'Python', level: 85 },
-        { name: 'Java', level: 80 },
-        { name: 'SQL', level: 85 },
-      ],
-      color: 'primary'
+      skills: ['Python', 'Java', 'SQL'],
+      color: 'primary',
+      note: 'Comfortable working with multiple programming languages for backend and scripting tasks.',
     },
     {
       title: 'Frontend',
       icon: Palette,
-      skills: [
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'React', level: 80 },
-        { name: 'Tailwind CSS', level: 85 },
-      ],
-      color: 'secondary'
+      skills: ['HTML/CSS', 'React', 'Tailwind CSS'],
+      color: 'secondary',
+      note: 'Skilled in crafting responsive, accessible, and visually engaging user interfaces.',
     },
     {
       title: 'Data Tools',
       icon: BarChart3,
-      skills: [
-        { name: 'Pandas', level: 85 },
-        { name: 'Streamlit', level: 80 },
-        { name: 'Plotly', level: 75 },
-        { name: 'Excel', level: 90 },
-      ],
-      color: 'accent'
+      skills: ['Pandas', 'Streamlit', 'Plotly', 'Excel'],
+      color: 'accent',
+      note: 'Experienced in data analysis, interactive dashboards, and storytelling with data.',
     },
     {
       title: 'Databases',
       icon: Database,
-      skills: [
-        { name: 'MySQL', level: 85 },
-        { name: 'MongoDB', level: 70 },
-      ],
-      color: 'primary'
-    }
+      skills: ['MySQL', 'MongoDB'],
+      color: 'primary',
+      note: 'Familiar with relational and NoSQL databases for storage and querying.',
+    },
   ];
 
   return (
@@ -54,17 +42,17 @@ const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills and proficiency levels across different domains.
+            A categorized overview of the tools and technologies I’ve worked with to build reliable and user-focused solutions.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories.map((category, categoryIndex) => {
+          {skillCategories.map((category) => {
             const Icon = category.icon;
             return (
               <Card
                 key={category.title}
-                className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-500 slide-up"
+                className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-500"
               >
                 <CardHeader className="pb-6">
                   <CardTitle className="flex items-center gap-3 text-xl">
@@ -75,35 +63,18 @@ const Skills = () => {
                   </CardTitle>
                 </CardHeader>
 
-                <CardContent className="space-y-6">
-                  {category.skills.map((skill) => (
-                    <div key={skill.name} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium text-foreground">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-
-                      <div className="w-full bg-muted/50 rounded-full h-2 overflow-hidden">
-                        <div
-                          className={`h-full bg-gradient-to-r from-${category.color} to-${category.color}/80 rounded-full`}
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
-
-                  <div className={`mt-6 p-4 bg-${category.color}/5 rounded-lg border border-${category.color}/20`}>
-                    <p className="text-sm text-center text-muted-foreground">
-                      {category.title === 'Languages' &&
-                        'Proficient in multiple programming languages with strong problem-solving skills.'}
-                      {category.title === 'Frontend' &&
-                        'Creating responsive and modern user interfaces with clean, maintainable code.'}
-                      {category.title === 'Data Tools' &&
-                        'Experienced in data analysis, visualization, and building interactive dashboards.'}
-                      {category.title === 'Databases' &&
-                        'Skilled in database design, optimization, and complex query development.'}
-                    </p>
-                  </div>
+                <CardContent className="space-y-4">
+                  <ul className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <li
+                        key={skill}
+                        className="px-3 py-1 text-sm bg-muted/50 rounded-full border border-border/40"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-sm text-muted-foreground mt-4 text-center">{category.note}</p>
                 </CardContent>
               </Card>
             );
@@ -123,7 +94,7 @@ const Skills = () => {
                   'Problem Solving',
                   'Version Control',
                   'Responsive Design',
-                  'Basic UI/UX Principles'
+                  'Basic UI/UX Principles',
                 ].map((skill) => (
                   <div
                     key={skill}
