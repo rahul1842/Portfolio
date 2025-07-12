@@ -25,7 +25,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Rahul. All rights reserved.
         </p>
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-          Built with React & Tailwind CSS
+          
         </p>
       </div>
 
