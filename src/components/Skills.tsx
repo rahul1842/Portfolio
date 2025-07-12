@@ -87,14 +87,21 @@ const Skills = () => {
               <h3 className="text-2xl font-bold text-primary mb-6">Additional Skills</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  'Git & GitHub',
-                  'API Integration',
-                  'Streamlit Apps',
-                  'Data Cleaning',
+                  'Communication',
+
+                  'Team Collaboration',
+
                   'Problem Solving',
-                  'Version Control',
+
+                  'Time Management',
+
+                  'Git & GitHub',
+
+                  'Streamlit Apps',
+
                   'Responsive Design',
-                  'Basic UI/UX Principles',
+
+                  'Basic UI/UX Principles'
                 ].map((skill) => (
                   <div
                     key={skill}
