@@ -61,7 +61,7 @@ const Contact = () => {
                 ></div>
               </div>
               <p className="text-center text-muted-foreground mt-4 text-sm">
-                Just a bouncing dot :)
+                Just a bouncing ball :)
               </p>
             </CardContent>
           </Card>
