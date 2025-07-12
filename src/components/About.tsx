@@ -33,23 +33,18 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="slide-up">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I'm a passionate Data Analyst and Frontend Web Developer with a love for creating 
-              beautiful, functional digital experiences. I specialize in turning complex data 
-              into meaningful insights and building modern, responsive web applications.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
+              I'm a curious Data Analyst and Frontend Web Developer who enjoys building beautiful, functional digital experiences. I’m passionate about turning raw data into meaningful stories and bringing modern, responsive web applications to life.
             </p>
 
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With expertise in both data analysis and frontend development, I bridge the gap 
-              between data-driven insights and user-friendly interfaces, crafting solutions 
-              that are both powerful and accessible.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
+              Blending my interests in data and design, I’m continuously learning how to connect user-friendly interfaces with insightful data, aiming to create tools that are both useful and engaging.
             </p>
 
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              When I'm not coding, you'll find me exploring new technologies, enjoying long bike rides, 
-              gaming with friends, or playing cricket at a competitive level — a passion I've pursued 
-              professionally for years. I believe balance between logic and play fuels creativity.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-justify">
+              When I’m not coding, you’ll find me exploring new tech, enjoying long bike rides, gaming with friends, or playing competitive cricket — a sport I’ve been passionate about for years. For me, a balance of logic and play keeps the creativity flowing.
             </p>
+
 
 
             <Button 
