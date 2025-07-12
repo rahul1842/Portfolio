@@ -39,7 +39,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/Rahul_Resume.pdf'; // Make sure this file is in the 'public/' folder
+    link.href = '/Rahul_Resume.pdf'; 
     link.download = 'Rahul_Resume.pdf';
     link.click();
   };
